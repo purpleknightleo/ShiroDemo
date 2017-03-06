@@ -21,7 +21,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 /**
- * Shiro简单示例：用户名/密码
+ * Shiro用户验证简单示例：用户名/密码
  * 
  * @author hzlifan
  *
@@ -45,7 +45,7 @@ public class ShiroTest {
 	}
 
 	@org.junit.Test
-	public void testSuccessfulLogin() {
+	public void testLoginAuth() {
 		// shiro.ini中配置了合法的用户名/密码
 		Factory<org.apache.shiro.mgt.SecurityManager> factory = new IniSecurityManagerFactory(
 				"classpath:shiro.ini");
